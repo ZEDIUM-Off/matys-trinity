@@ -1,0 +1,642 @@
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #186a2b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #20993d;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    background-color: black
+}
+
+.all {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.home_img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.logo_gif {
+    position: absolute;
+    top: 70px;
+    left: 80%;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+}
+
+.page1_img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.lay_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: auto;
+    z-index: 2;
+}
+
+.lay_right {
+    position: absolute;
+    top: 70%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: auto;
+    z-index: 2;
+}
+
+.page2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.cover {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.hologif_center {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: auto;
+    z-index: 2;
+}
+
+.logo_gif2 {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+}
+
+.menu {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    width: 420px;
+    height: auto;
+    z-index: 2;
+}
+
+.lay_right2 {
+    position: absolute;
+    top: 80%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: auto;
+    z-index: 2;
+}
+
+.melancolie {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.mel_img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.btn_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+    z-index: 2;
+    animation: rotate 20s linear infinite;
+    cursor: pointer;
+}
+
+.btn_logo:hover {
+    width: 110px;
+}
+
+.melancolie_video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    z-index: 2;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+}
+
+
+/*animate btn_logo with slow rotation*/
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* .item {
+  position:absolute;
+}
+
+#item1 {
+  top: 800px;
+  left: 800px;
+  width: 300px;
+  height: 200px;
+  background: #1C31E9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#item2 {
+  top: 1300px;
+  left: 2500px;
+  width: 200px;
+  height: 200px;
+  background: #1C93E9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+#page1 {
+  top: -300px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+ 
+  background:url("../../../Documents/storytime/images/Plan de travail 2 2.jpg") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+
+#page2 {
+  top: 1000px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+
+  background:url("../images/Plan de travail 3 copie 2.jpg") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+
+#page3 {
+  top: 2500px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+ 
+  background:url("../../../Documents/kevin/storytime/images/Plan de travail 1.jpg") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#melancolie {
+  top: 3715px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+  background:url("../../../Documents/storytime/images/melancolie.jpg") no-repeat center center / 100% auto;
+}
+
+#video1 {
+  top: 5000px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+  background:url("../images/CLIP 1.jpg") no-repeat center center / 100% auto;
+}
+
+#adrenaline {
+  top: 6000px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+  background:url("../../../Documents/storytime/images/adrenaline.jpg") no-repeat center center / 100% auto;
+}
+
+#video2 {
+  top: 7000px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+  background:url("../images/CLIP 2.jpg") no-repeat center center / 100% auto;
+}
+
+#colere {
+  top: 8000px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+  background:url("../../../Documents/storytime/images/violance.jpg") no-repeat center center / 100% auto;
+}
+
+#video3 {
+  top: 9000px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+  background:url("../images/CLIP 3.jpg") no-repeat center center / 100% auto;
+}
+
+#tristesse {
+  top: 10000px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+  background:url("../../../Documents/storytime/images/tristesse.jpg") no-repeat center center / 100% auto;
+}	
+#video4 {
+  top: 11000px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+  background:url("../images/CLIP 4.jpg") no-repeat center center / 100% auto;
+}
+#deconexion {
+  top: 13000px;
+  left: 0px;
+  width: 1450px;
+  height: 1350px;
+  background:url("../images/DECONNEXION 2.jpg") no-repeat center center / 100% auto;
+}
+
+#element1 {
+  position: absolute;
+  top: 2484px;
+  left: 330px;
+  width: 542px;
+  height: 1350px;
+ 
+  background:url("../images/jeux video.gif") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+
+
+#textemenu1 {
+  position: absolute;
+  top: 2600px;
+  left: 900px;
+  width: 300px;
+  height: 1000px;
+ 
+  background:url("../images/MENUP.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+
+#giftypo {
+  position: absolute;
+  top: 2340px;
+  left: 1200px;
+  width: 200px;
+  height: 1000px;
+ 
+  background:url("../images/logo.gif") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#giftypo2 {
+  position: absolute;
+  top: 900px;
+  left: 1200px;
+  width: 200px;
+  height: 1000px;
+ 
+  background:url("../images/logo.gif") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#voix1 {
+  position: absolute;
+  top: 1330px;
+  left: 1250px;
+  width: 150px;
+  height: 1000px;
+ 
+  background:url("../images/bouton.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#voix2 {
+  position: absolute;
+  top: 2830px;
+  left: 1250px;
+  width: 150px;
+  height: 1000px;
+ 
+  background:url("../images/bouton.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#voix3 {
+  position: absolute;
+  top: 3760px;
+  left: 70px;
+  width: 100px;
+  height: 1000px;
+ 
+  background:url("../images/bouton.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#voix4 {
+  position: absolute;
+  top: 6050px;
+  left: 70px;
+  width: 100px;
+  height: 1000px;
+ 
+  background:url("../images/bouton.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#voix5 {
+  position: absolute;
+  top: 8050px;
+  left: 70px;
+  width: 100px;
+  height: 1000px;
+ 
+  background:url("../images/bouton.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#voix6 {
+  position: absolute;
+  top: 10050px;
+  left: 70px;
+  width: 100px;
+  height: 1000px;
+ 
+  background:url("../images/bouton.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#voix7 {
+  position: absolute;
+  top: 1165px;
+  left: 687px;
+  width: 100px;
+  height: 1000px;
+ 
+  background:url("../images/bouton.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#voix8 {
+  position: absolute;
+  top: 13050px;
+  left: 655px;
+  width: 125px;
+  height: 1000px;
+ 
+  background:url("../images/bouton.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#lg1 {
+  position: absolute;
+  top: 3950px;
+  left: 720px;
+  width: 50px;
+  height: 1000px;
+ 
+  background:url("../images/cliquehere.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#lg2 {
+  position: absolute;
+  top: 6270px;
+  left: 720px;
+  width: 50px;
+  height: 1000px;
+ 
+  background:url("../images/cliquehere.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#lg3 {
+  position: absolute;
+  top: 8260px;
+  left: 720px;
+  width: 50px;
+  height: 1000px;
+ 
+  background:url("../images/cliquehere.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#lg4 {
+  position: absolute;
+  top: 10300px;
+  left: 720px;
+  width: 50px;
+  height: 1000px;
+ 
+  background:url("../images/cliquehere.png") no-repeat center center / 100% auto;
+
+	
+	
+}
+
+#megatron {
+  position: absolute;
+  top: 9200px;
+  left: 61px;
+  width: 50px;
+  height: 1000px;
+
+		
+}
+
+#trinity {
+  position: absolute;
+  top: 7220px;
+  left: 61px;
+  width: 50px;
+  height: 1000px;
+
+	
+	
+}
+
+#poizon {
+  position: absolute;
+  top: 5170px;
+  left: 61px;
+  width: 50px;
+  height: 1000px;
+	
+}
+
+#triste {
+  position: absolute;
+  top: 11220px;
+  left: 61px;
+  width: 50px;
+  height: 1000px;
+	
+}
+
+.btn{
+background-color: transparent;
+border: 2px solid red;
+border-radius: 20px;
+color: red;
+cursor: pointer;
+padding: 20px;
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;
+transition: background-color 300ms, color 300ms;
+display: block;
+	
+}
+
+.btn:hover{
+color: #fff;
+background-color: red;
+} */

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Storytime</title>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/css.css">
+
+
+
+</head>
+
+<body>
+    <div class="all">
+        <section class="home">
+            <img class="home_img" src="images/Plan de travail 2 2.jpg"></img>
+            <div data-v-02dfb122="" class="video-button glitch">
+                <div class="glitch__inner">
+                    <div class="glitch__before">
+                        <div class="video-button__text noselect" onclick="toPage1">LAUNCH</div>
+                    </div>
+                    <div class="glitch__text">
+                        <div class="video-button__text noselect">LAUNCH</div>
+                    </div>
+                    <div class="glitch__after">
+                        <div class="video-button__text noselect">LAUNCH</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page1">
+            <img class="page1_img" src="images/Plan de travail 3 copie 2.jpg"></img>
+            <img class="logo_gif" src="images/logo.gif"></img>
+            <img class="lay_center" src="images/bouton.png"></img>
+            <img class="lay_right" src="images/bouton.png"></img>
+        </section>
+        <section class="page2">
+            <img class="cover" src="images/Plan de travail 1.jpg"></img>
+            <img class="hologif_center" src="images/jeux video.gif"></img>
+            <img class="logo_gif" src="images/logo.gif"></img>
+            <img class="menu" src="images/MENUP.png"></img>
+            <img class="lay_right2" src="images/bouton.png"></img>
+        </section>
+        <section class="melancolie">
+            <img class="mel_img" src="images/melancolie.jpg"></img>
+            <img class="btn_logo" src="images/cliquehere.png"></img>
+            <video controls class="melancolie_video">          
+              <source src="/images/LAYLOW - TRINITYVILLE.mp4" type="video/mp4">
+          </video>
+        </section>
+    </div>
+    <script src=" js/jquery.js "></script>
+    <script src="js/scrollbooster.min.js "></script>
+
+    <script type="text/javascript ">
+        const toPage1 = document.querySelector('.video-button');
+        toPage1.addEventListener('click', function() {
+            document.querySelector('.page1').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        const launch_mel = document.querySelector('.btn_logo');
+        launch_mel.addEventListener('click', function() {
+            document.querySelector('.melancolie_video').style.opacity = "1";
+            document.querySelector('.melancolie_video').style.zIndex = "2";
+            document.querySelector('.melancolie_video').play();
+        });
+    </script>
+</body>
+
+</html>
